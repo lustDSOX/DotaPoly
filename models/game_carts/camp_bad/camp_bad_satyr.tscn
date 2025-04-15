@@ -1,0 +1,97 @@
+[gd_scene load_steps=18 format=3 uid="uid://cfnmnmsjq2oqk"]
+
+[ext_resource type="Material" uid="uid://c61l7u2yj5fm4" path="res://materials/standart_radiant.tres" id="1_4700d"]
+[ext_resource type="Material" uid="uid://bcmiver5cxgqm" path="res://materials/standart_dire.tres" id="1_frndx"]
+[ext_resource type="PackedScene" uid="uid://dettvcld1c3qi" path="res://models/camp/camp_fire001.gltf" id="2_s40hh"]
+[ext_resource type="PackedScene" uid="uid://bu86jyjxd6hkp" path="res://models/camp/camp_fire002.gltf" id="3_jslam"]
+[ext_resource type="PackedScene" uid="uid://chxr72q55c511" path="res://models/camp/creep_camp001c.gltf" id="4_lmg1e"]
+[ext_resource type="PackedScene" uid="uid://ckswn8jiupp4j" path="res://models/camp/creep_camp001h.gltf" id="5_g88wt"]
+[ext_resource type="PackedScene" uid="uid://m7kakxl2nvft" path="res://models/camp/creep_camp001l.gltf" id="6_qx2ru"]
+[ext_resource type="PackedScene" uid="uid://67b6uxa3naeh" path="res://models/camp/creep_camp001m.gltf" id="7_hms35"]
+[ext_resource type="PackedScene" uid="uid://du4105xxfyy23" path="res://models/camp/creep_camp001a.gltf" id="9_0imy5"]
+[ext_resource type="PackedScene" uid="uid://biip5fxpfx4op" path="res://models/creep/satyr/boss/satyr_boss.gltf" id="10_a1ls3"]
+[ext_resource type="PackedScene" uid="uid://un1hd1ufn3co" path="res://models/flag_player/banner_red.gltf" id="11_e42x0"]
+[ext_resource type="PackedScene" uid="uid://bojaw1f08ov8m" path="res://models/tree/bad/dire_tree001.gltf" id="12_0vgyg"]
+[ext_resource type="PackedScene" uid="uid://bwirjfab1yawv" path="res://models/tree/bad/dire_tree002.gltf" id="13_8cvdg"]
+[ext_resource type="PackedScene" uid="uid://d2erdgqfhosmg" path="res://models/tree/bad/dire_tree002_grow.gltf" id="14_uvver"]
+[ext_resource type="PackedScene" uid="uid://b6ah8aly8npgi" path="res://models/tree/bad/dire_tree004.gltf" id="15_1f8ry"]
+[ext_resource type="PackedScene" uid="uid://r64amq446dt2" path="res://models/tree/bad/dire_tree004b_sfm.gltf" id="16_oekye"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_esel8"]
+material = ExtResource("1_4700d")
+size = Vector3(15, 0.1, 20)
+
+[node name="camp_bad_satyr" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+material_override = ExtResource("1_frndx")
+mesh = SubResource("BoxMesh_esel8")
+
+[node name="camp_fire001_vmdl_c" parent="." instance=ExtResource("2_s40hh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.01127, 0.0532235, 0.0384176)
+
+[node name="camp_fire002_vmdl_c" parent="." instance=ExtResource("3_jslam")]
+transform = Transform3D(0.740816, 0, -0.671708, 0, 1, 0, 0.671708, 0, 0.740816, 2.33126, 0, -5.88108)
+
+[node name="creep_camp001c_vmdl_c" parent="." instance=ExtResource("4_lmg1e")]
+transform = Transform3D(0.999996, -0.00286234, 0, 0.00286234, 0.999996, 0, 0, 0, 1, -0.211113, 0.0657493, -4.15538)
+
+[node name="creep_camp001c_vmdl_c2" parent="." instance=ExtResource("4_lmg1e")]
+transform = Transform3D(-0.943304, 0, -0.331931, 0, 1, 0, 0.331931, 0, -0.943304, 3.91753, 0.0657498, 6.14626)
+
+[node name="creep_camp001h_vmdl_c2" parent="." instance=ExtResource("5_g88wt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.36944, 0, -4.35879)
+
+[node name="creep_camp001h_vmdl_c4" parent="." instance=ExtResource("5_g88wt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.9704, 0, 5.22716)
+
+[node name="creep_camp001h_vmdl_c3" parent="." instance=ExtResource("5_g88wt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.92414, 0, 8.97723)
+
+[node name="creep_camp001l_vmdl_c" parent="." instance=ExtResource("6_qx2ru")]
+transform = Transform3D(0.558715, 0, -0.82936, 0, 1, 0, 0.82936, 0, 0.558715, -2.30101, 0, -5.09498)
+
+[node name="creep_camp001l_vmdl_c2" parent="." instance=ExtResource("6_qx2ru")]
+transform = Transform3D(-0.999094, 0, 0.0425557, 0, 1, 0, -0.0425557, 0, -0.999094, 6.39796, 0, -2.69513)
+
+[node name="creep_camp001m_vmdl_c" parent="." instance=ExtResource("7_hms35")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.24369, 0, -2.50501)
+
+[node name="creep_camp001m_vmdl_c2" parent="." instance=ExtResource("7_hms35")]
+transform = Transform3D(0.202206, 0, 0.979343, 0, 1, 0, -0.979343, 0, 0.202206, -4.24369, 0, 7.84098)
+
+[node name="creep_camp001m_vmdl_c3" parent="." instance=ExtResource("7_hms35")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.4772, 0, -7.2035)
+
+[node name="creep_camp001h_vmdl_c5" parent="." instance=ExtResource("5_g88wt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.36543, 0, -7.62415)
+
+[node name="creep_camp001c_vmdl_c3" parent="." instance=ExtResource("4_lmg1e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.16172, 0.0699039, -3.77318)
+
+[node name="creep_camp001b_vmdl_c2" parent="." instance=ExtResource("9_0imy5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.19572, 0, -9.12921)
+
+[node name="banner_guild_lvl4_vmdl_c2" parent="." instance=ExtResource("11_e42x0")]
+transform = Transform3D(0.751725, 0, -0.659477, 0, 1, 0, 0.659477, 0, 0.751725, 4.42674, 1.22908, 8.32514)
+
+[node name="banner_guild_lvl4_vmdl_c3" parent="." instance=ExtResource("11_e42x0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.85216, 1.47116, -9.25884)
+
+[node name="dire_tree001_vmdl_c" parent="." instance=ExtResource("12_0vgyg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.86141, 0, -8.83103)
+
+[node name="dire_tree002_vmdl_c" parent="." instance=ExtResource("13_8cvdg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.32494, 0, 9.05851)
+
+[node name="dire_tree002_grow_vmdl_c" parent="." instance=ExtResource("14_uvver")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.05255, 0, 9.41005)
+
+[node name="dire_tree004_vmdl_c" parent="." instance=ExtResource("15_1f8ry")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.34649, 0, -6.03287)
+
+[node name="dire_tree004b_sfm_vmdl_c" parent="." instance=ExtResource("16_oekye")]
+transform = Transform3D(-0.846314, 0, -0.532684, 0, 1, 0, 0.532684, 0, -0.846314, -1.30724, 0, -8.63772)
+
+[node name="satyr_boss_vmdl_c2" parent="." instance=ExtResource("10_a1ls3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.85157, 0, -2.07469)

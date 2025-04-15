@@ -1,0 +1,12 @@
+[gd_resource type="StandardMaterial3D" load_steps=4 format=3 uid="uid://c61l7u2yj5fm4"]
+
+[ext_resource type="Texture2D" uid="uid://c2ae85laq5ywr" path="res://textures/terrain/rocky_terrain_02_diff_1k.png" id="1_dpobf"]
+[ext_resource type="Texture2D" uid="uid://bhai4vhxu4dyp" path="res://textures/terrain/lichen_rock_nor_gl_2k.png" id="2_dpobf"]
+[ext_resource type="Texture2D" uid="uid://w152q4qo5raa" path="res://textures/terrain/rocky_terrain_02_rough_1k.png" id="3_ad4fv"]
+
+[resource]
+albedo_texture = ExtResource("1_dpobf")
+roughness_texture = ExtResource("3_ad4fv")
+normal_enabled = true
+normal_texture = ExtResource("2_dpobf")
+uv1_scale = Vector3(5, 5, 5)

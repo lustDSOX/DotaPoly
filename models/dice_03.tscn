@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://bly3hwnacwf4c"]
+
+[ext_resource type="PackedScene" uid="uid://ddjv6qph6g73n" path="res://models/Dice03.fbx" id="1_07vgh"]
+[ext_resource type="Script" uid="uid://dqey1bhfhg2fr" path="res://scripts/dice_03.gd" id="2_bijsu"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wbmh0"]
+size = Vector3(1.48233, 1.21783, 1.44781)
+
+[node name="Dice03" instance=ExtResource("1_07vgh")]
+
+[node name="dice_03" parent="." index="0"]
+transform = Transform3D(-0.103262, 0.863852, 0.493048, 0.716478, 0.408433, -0.565545, -0.689925, 0.294859, -0.661107, 0, 0, 0)
+constant_torque = Vector3(1, 1, 1)
+script = ExtResource("2_bijsu")
+
+[node name="dice_03" parent="dice_03" index="0"]
+transform = Transform3D(70, 0, 0, 0, 70, 0, 0, 0, 70, 0, 0, 0)
+
+[node name="CollisionShape3D" parent="dice_03" index="1"]
+transform = Transform3D(1, -1.78814e-07, 0, 0, 1, 5.96046e-08, -2.98023e-08, -5.96046e-08, 1, 0.0235373, -0.0863342, 0.032238)
+shape = SubResource("BoxShape3D_wbmh0")

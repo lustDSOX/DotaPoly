@@ -1,0 +1,90 @@
+[gd_scene load_steps=7 format=3 uid="uid://cj18khtd0vjio"]
+
+[ext_resource type="Material" uid="uid://c61l7u2yj5fm4" path="res://materials/standart_radiant.tres" id="1_pqkdu"]
+[ext_resource type="PackedScene" uid="uid://bvcr7fy5ld851" path="res://models/rune/rune_point001.gltf" id="2_pt7x3"]
+[ext_resource type="PackedScene" uid="uid://chns7jn8laf6u" path="res://models/rune/rune_goldxp.gltf" id="3_36i5r"]
+[ext_resource type="PackedScene" uid="uid://batamn2pavy8d" path="res://models/rune/goldcoins_01.gltf" id="4_sedhy"]
+[ext_resource type="PackedScene" uid="uid://dnd0kcgpykkxl" path="res://models/flag_player/banner_gold.gltf" id="5_pt7x3"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_esel8"]
+material = ExtResource("1_pqkdu")
+size = Vector3(15, 0.1, 20)
+
+[node name="gold_rune_1" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_esel8")
+
+[node name="rune_point001_vmdl_c" parent="." instance=ExtResource("2_pt7x3")]
+
+[node name="rune_goldxp_vmdl_c2" parent="." instance=ExtResource("3_36i5r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.354407, 0)
+
+[node name="coin" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.60784)
+
+[node name="goldcoins_01_vmdl_c" parent="coin" instance=ExtResource("4_sedhy")]
+transform = Transform3D(-0.242311, 0, 0.970199, 0, 1, 0, -0.970199, 0, -0.242311, -3.12776, 0, 6.51809)
+
+[node name="goldcoins_01_vmdl_c2" parent="coin" instance=ExtResource("4_sedhy")]
+transform = Transform3D(-0.788838, 0, 0.614602, 0, 1, 0, -0.614602, 0, -0.788838, -1.36902, 0, 3.4384)
+
+[node name="goldcoins_01_vmdl_c3" parent="coin" instance=ExtResource("4_sedhy")]
+transform = Transform3D(-0.999719, 0, -0.0236993, 0, 1, 0, 0.0236993, 0, -0.999719, 0.495898, 0, 4.41939)
+
+[node name="goldcoins_01_vmdl_c17" parent="coin" instance=ExtResource("4_sedhy")]
+transform = Transform3D(-0.999719, 0, -0.0236993, 0, 1, 0, 0.0236993, 0, -0.999719, -1.44454, 0, 5.47078)
+
+[node name="goldcoins_01_vmdl_c18" parent="coin" instance=ExtResource("4_sedhy")]
+transform = Transform3D(-0.999719, 0, -0.0236993, 0, 1, 0, 0.0236993, 0, -0.999719, -5.54756, 0, 6.26886)
+
+[node name="goldcoins_01_vmdl_c19" parent="coin" instance=ExtResource("4_sedhy")]
+transform = Transform3D(-1.99944, 0, -0.0473987, 0, 2, 0, 0.0473987, 0, -1.99944, -4.52425, 0.00534582, 3.60216)
+
+[node name="goldcoins_01_vmdl_c4" parent="coin" instance=ExtResource("4_sedhy")]
+transform = Transform3D(-0.141811, 0, 1.99497, 0, 2, 0, -1.99497, 0, -0.141811, 3.43641, -0.00782681, 2.94835)
+
+[node name="goldcoins_01_vmdl_c7" parent="coin" instance=ExtResource("4_sedhy")]
+transform = Transform3D(-0.993788, 0, 0.111295, 0, 1, 0, -0.111295, 0, -0.993788, -3.96244, 0, 4.63694)
+
+[node name="goldcoins_01_vmdl_c8" parent="coin" instance=ExtResource("4_sedhy")]
+transform = Transform3D(-0.993788, 0, 0.111295, 0, 1, 0, -0.111295, 0, -0.993788, -3.96244, 0, -5.63778)
+
+[node name="goldcoins_01_vmdl_c9" parent="coin" instance=ExtResource("4_sedhy")]
+transform = Transform3D(0.853615, 0, 0.520905, 0, 1, 0, -0.520905, 0, 0.853615, 2.09156, 0, -9.67999)
+
+[node name="goldcoins_01_vmdl_c10" parent="coin" instance=ExtResource("4_sedhy")]
+transform = Transform3D(0.737404, 0, 1.30623, 0, 1.5, 0, -1.30623, 0, 0.737404, 4.38216, 0, -7.72829)
+
+[node name="goldcoins_01_vmdl_c11" parent="coin" instance=ExtResource("4_sedhy")]
+transform = Transform3D(1.55012, 0, 0.396389, 0, 1.6, 0, -0.396389, 0, 1.55012, -1.79382, 0, -8.60135)
+
+[node name="goldcoins_01_vmdl_c16" parent="coin" instance=ExtResource("4_sedhy")]
+transform = Transform3D(1.19679, 0, 0.0877186, 0, 1.2, 0, -0.0877186, 0, 1.19679, 0.166033, 0, -6.47374)
+
+[node name="goldcoins_01_vmdl_c12" parent="coin" instance=ExtResource("4_sedhy")]
+transform = Transform3D(-1.29192, 0, 0.144684, 0, 1.3, 0, -0.144684, 0, -1.29192, 0.638651, 0, 6.25989)
+
+[node name="goldcoins_01_vmdl_c13" parent="coin" instance=ExtResource("4_sedhy")]
+transform = Transform3D(-1.49068, 0, 0.166943, 0, 1.5, 0, -0.166943, 0, -1.49068, 4.56479, 0, 5.97786)
+
+[node name="goldcoins_01_vmdl_c15" parent="coin" instance=ExtResource("4_sedhy")]
+transform = Transform3D(-0.993788, 0, 0.111295, 0, 1, 0, -0.111295, 0, -0.993788, 5.2456, 0, 4.59241)
+
+[node name="goldcoins_01_vmdl_c14" parent="coin" instance=ExtResource("4_sedhy")]
+transform = Transform3D(-0.832661, 0, 0.553784, 0, 1, 0, -0.553784, 0, -0.832661, 2.14461, 0, 5.25908)
+
+[node name="goldcoins_01_vmdl_c5" parent="coin" instance=ExtResource("4_sedhy")]
+transform = Transform3D(-0.994161, 0, -0.107913, 0, 1, 0, 0.107913, 0, -0.994161, -4.16298, 0, -7.30939)
+
+[node name="goldcoins_01_vmdl_c6" parent="coin" instance=ExtResource("4_sedhy")]
+transform = Transform3D(-0.91242, 0, 0.409254, 0, 1, 0, -0.409254, 0, -0.91242, -5.48569, 0, -8.77549)
+
+[node name="banner_radiant_vmdl_c2" parent="." instance=ExtResource("5_pt7x3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.088, 2.657, -9)
+
+[node name="banner_radiant_vmdl_c3" parent="." instance=ExtResource("5_pt7x3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.185, 2.628, -9)
+
+[node name="banner_radiant_vmdl_c4" parent="." instance=ExtResource("5_pt7x3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.7, 2.612, -9)

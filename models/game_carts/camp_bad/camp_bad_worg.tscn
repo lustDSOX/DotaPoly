@@ -1,0 +1,93 @@
+[gd_scene load_steps=17 format=3 uid="uid://cmt2e2cw31i81"]
+
+[ext_resource type="Material" uid="uid://bcmiver5cxgqm" path="res://materials/standart_dire.tres" id="1_ai46v"]
+[ext_resource type="Material" uid="uid://c61l7u2yj5fm4" path="res://materials/standart_radiant.tres" id="2_km468"]
+[ext_resource type="PackedScene" uid="uid://dettvcld1c3qi" path="res://models/camp/camp_fire001.gltf" id="3_ofn10"]
+[ext_resource type="PackedScene" uid="uid://bu86jyjxd6hkp" path="res://models/camp/camp_fire002.gltf" id="4_1gm4p"]
+[ext_resource type="PackedScene" uid="uid://chxr72q55c511" path="res://models/camp/creep_camp001c.gltf" id="5_kiyru"]
+[ext_resource type="PackedScene" uid="uid://ckswn8jiupp4j" path="res://models/camp/creep_camp001h.gltf" id="6_ms672"]
+[ext_resource type="PackedScene" uid="uid://m7kakxl2nvft" path="res://models/camp/creep_camp001l.gltf" id="7_dq0pn"]
+[ext_resource type="PackedScene" uid="uid://67b6uxa3naeh" path="res://models/camp/creep_camp001m.gltf" id="8_wrati"]
+[ext_resource type="PackedScene" uid="uid://un1hd1ufn3co" path="res://models/flag_player/banner_red.gltf" id="11_fn3ot"]
+[ext_resource type="PackedScene" uid="uid://bojaw1f08ov8m" path="res://models/tree/bad/dire_tree001.gltf" id="12_1meni"]
+[ext_resource type="PackedScene" uid="uid://bwirjfab1yawv" path="res://models/tree/bad/dire_tree002.gltf" id="13_4ksu8"]
+[ext_resource type="PackedScene" uid="uid://d2erdgqfhosmg" path="res://models/tree/bad/dire_tree002_grow.gltf" id="14_5v3e1"]
+[ext_resource type="PackedScene" uid="uid://b6ah8aly8npgi" path="res://models/tree/bad/dire_tree004.gltf" id="15_010l4"]
+[ext_resource type="PackedScene" uid="uid://dmshncbgu8arj" path="res://models/creep/worg/boss/n_creep_worg_large.gltf" id="15_s2kir"]
+[ext_resource type="PackedScene" uid="uid://r64amq446dt2" path="res://models/tree/bad/dire_tree004b_sfm.gltf" id="16_drdpk"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_esel8"]
+material = ExtResource("2_km468")
+size = Vector3(15, 0.1, 20)
+
+[node name="camp_bad_worg" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+material_override = ExtResource("1_ai46v")
+mesh = SubResource("BoxMesh_esel8")
+
+[node name="camp_fire001_vmdl_c" parent="." instance=ExtResource("3_ofn10")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.01127, 0.0532235, 4.3939)
+
+[node name="camp_fire002_vmdl_c" parent="." instance=ExtResource("4_1gm4p")]
+transform = Transform3D(0.90986, 0, 0.414915, 0, 1, 0, -0.414915, 0, 0.90986, -4.12831, 0.240705, -5.88108)
+
+[node name="creep_camp001c_vmdl_c" parent="." instance=ExtResource("5_kiyru")]
+transform = Transform3D(0.999996, -0.00286234, 0, 0.00286234, 0.999996, 0, 0, 0, 1, -0.211113, 0.0657493, -4.15538)
+
+[node name="creep_camp001c_vmdl_c4" parent="." instance=ExtResource("5_kiyru")]
+transform = Transform3D(-0.871604, 0.00249484, 0.490204, 0.00286234, 0.999996, 0, -0.490202, 0.00140313, -0.871608, -5.53942, 0.0657493, 5.22273)
+
+[node name="creep_camp001c_vmdl_c2" parent="." instance=ExtResource("5_kiyru")]
+transform = Transform3D(-0.943304, 0, -0.331931, 0, 1, 0, 0.331931, 0, -0.943304, 3.91753, 0.0657498, 6.14626)
+
+[node name="creep_camp001h_vmdl_c2" parent="." instance=ExtResource("6_ms672")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.525932, 0, -8.84564)
+
+[node name="creep_camp001h_vmdl_c3" parent="." instance=ExtResource("6_ms672")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.92414, 0, 8.97723)
+
+[node name="creep_camp001l_vmdl_c" parent="." instance=ExtResource("7_dq0pn")]
+transform = Transform3D(0.558715, 0, -0.82936, 0, 1, 0, 0.82936, 0, 0.558715, -2.30101, 0, -5.09498)
+
+[node name="creep_camp001l_vmdl_c2" parent="." instance=ExtResource("7_dq0pn")]
+transform = Transform3D(-0.999094, 0, 0.0425557, 0, 1, 0, -0.0425557, 0, -0.999094, 6.39796, 0, -2.69513)
+
+[node name="creep_camp001m_vmdl_c2" parent="." instance=ExtResource("8_wrati")]
+transform = Transform3D(0.202206, 0, 0.979343, 0, 1, 0, -0.979343, 0, 0.202206, -4.24369, 0, 7.84098)
+
+[node name="creep_camp001m_vmdl_c3" parent="." instance=ExtResource("8_wrati")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.40756, 0, -7.2035)
+
+[node name="creep_camp001h_vmdl_c5" parent="." instance=ExtResource("6_ms672")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.36543, 0, -7.62415)
+
+[node name="creep_camp001c_vmdl_c3" parent="." instance=ExtResource("5_kiyru")]
+transform = Transform3D(0.370752, 0, 0.928732, 0, 1, 0, -0.928732, 0, 0.370752, -3.94798, 0.0699039, -7.90989)
+
+[node name="banner_guild_lvl4_vmdl_c2" parent="." instance=ExtResource("11_fn3ot")]
+transform = Transform3D(0.751725, 0, -0.659477, 0, 1, 0, 0.659477, 0, 0.751725, 4.42674, 1.22908, -8.91089)
+
+[node name="banner_guild_lvl4_vmdl_c3" parent="." instance=ExtResource("11_fn3ot")]
+transform = Transform3D(0.837166, 0, -0.54695, 0, 1, 0, 0.54695, 0, 0.837166, -6.83215, 1.47116, 9.16906)
+
+[node name="dire_tree001_vmdl_c" parent="." instance=ExtResource("12_1meni")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.86141, 0, -8.83103)
+
+[node name="dire_tree002_vmdl_c" parent="." instance=ExtResource("13_4ksu8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.32494, 0, 9.05851)
+
+[node name="dire_tree002_vmdl_c2" parent="." instance=ExtResource("13_4ksu8")]
+transform = Transform3D(0.28848, 0, -0.957486, 0, 1, 0, 0.957486, 0, 0.28848, 1.24304, 0, -8.32251)
+
+[node name="dire_tree002_grow_vmdl_c" parent="." instance=ExtResource("14_5v3e1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.387, 0, -5.35425)
+
+[node name="dire_tree004_vmdl_c" parent="." instance=ExtResource("15_010l4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0332, 0, 8.97262)
+
+[node name="dire_tree004b_sfm_vmdl_c" parent="." instance=ExtResource("16_drdpk")]
+transform = Transform3D(-0.846314, 0, -0.532684, 0, 1, 0, 0.532684, 0, -0.846314, -5.85996, 0, -8.63772)
+
+[node name="n_creep_worg_large_vmdl_c2" parent="." instance=ExtResource("15_s2kir")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.8307, 0, -1.5523)

@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=3 uid="uid://c3tqyigrr3xg8"]
+
+[ext_resource type="Material" uid="uid://c61l7u2yj5fm4" path="res://materials/standart_radiant.tres" id="1_lim4m"]
+[ext_resource type="PackedScene" uid="uid://c7prb6bb0qo6i" path="res://models/tormentor/divine_sentinel_vmdl_c_2.tscn" id="2_udpvs"]
+[ext_resource type="PackedScene" uid="uid://7gcqudkw1a8a" path="res://models/tormentor/divine_sentinel_cube_vmdl_c_2.tscn" id="3_1t5ty"]
+[ext_resource type="PackedScene" uid="uid://7jyw1jaj66ih" path="res://models/flag_player/bannerb_blue.gltf" id="4_ic3ag"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_esel8"]
+material = ExtResource("1_lim4m")
+size = Vector3(15, 0.1, 20)
+
+[node name="tormentor_1" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_esel8")
+
+[node name="divine_sentinel_vmdl_c2" parent="." instance=ExtResource("2_udpvs")]
+transform = Transform3D(0.533127, 0, -0.846035, 0, 1, 0, 0.846035, 0, 0.533127, 0.088439, 0.308432, -4.74457)
+
+[node name="divine_sentinel_cube_vmdl_c2" parent="." instance=ExtResource("3_1t5ty")]
+transform = Transform3D(0.553813, 0, -0.832641, 0, 1, 0, 0.832641, 0, 0.553813, 0.203539, 0, -5.00677)
+
+[node name="bannerb_dire_vmdl_c2" parent="." instance=ExtResource("4_ic3ag")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.92536, -0.154366, -8.5396)
+
+[node name="bannerb_dire_vmdl_c3" parent="." instance=ExtResource("4_ic3ag")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.11625, -0.154366, -8.5396)
+
+[node name="bannerb_dire_vmdl_c4" parent="." instance=ExtResource("4_ic3ag")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.63588, -0.154366, 8.42283)

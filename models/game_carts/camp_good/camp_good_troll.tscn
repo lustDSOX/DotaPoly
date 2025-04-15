@@ -1,0 +1,110 @@
+[gd_scene load_steps=17 format=3 uid="uid://cychvnnfdxngp"]
+
+[ext_resource type="Material" uid="uid://c61l7u2yj5fm4" path="res://materials/standart_radiant.tres" id="1_kwduh"]
+[ext_resource type="PackedScene" uid="uid://dettvcld1c3qi" path="res://models/camp/camp_fire001.gltf" id="2_aqhak"]
+[ext_resource type="PackedScene" uid="uid://du4105xxfyy23" path="res://models/camp/creep_camp001a.gltf" id="3_kwduh"]
+[ext_resource type="PackedScene" uid="uid://chxr72q55c511" path="res://models/camp/creep_camp001c.gltf" id="4_h8yin"]
+[ext_resource type="PackedScene" uid="uid://ckswn8jiupp4j" path="res://models/camp/creep_camp001h.gltf" id="5_onxtw"]
+[ext_resource type="PackedScene" uid="uid://m7kakxl2nvft" path="res://models/camp/creep_camp001l.gltf" id="6_vy0rt"]
+[ext_resource type="PackedScene" uid="uid://67b6uxa3naeh" path="res://models/camp/creep_camp001m.gltf" id="7_ud8kh"]
+[ext_resource type="PackedScene" uid="uid://bx54mhyauau7p" path="res://models/tree/good/dk_persona_debut_foreground_plants.gltf" id="8_2eb6g"]
+[ext_resource type="PackedScene" uid="uid://ch3ah3e62kaqk" path="res://models/tree/good/tree_oak_00.gltf" id="9_786a1"]
+[ext_resource type="PackedScene" uid="uid://47ejkdf61m08" path="res://models/tree/good/tree_oak_01_inspector.gltf" id="10_xnjrj"]
+[ext_resource type="PackedScene" uid="uid://d1kydeu10vlul" path="res://models/tree/good/tree_oak_02_sfm.gltf" id="11_o7trj"]
+[ext_resource type="PackedScene" uid="uid://bo3iraumam570" path="res://models/tree/good/tree_oak_snow_01.gltf" id="12_8lq3d"]
+[ext_resource type="PackedScene" uid="uid://smricitdvaet" path="res://models/flag_player/banner_white.gltf" id="13_bbrtg"]
+[ext_resource type="PackedScene" uid="uid://rw2n5twyu8er" path="res://models/creep/troll/boss/n_creep_troll_dark_b.gltf" id="14_6q7it"]
+[ext_resource type="PackedScene" uid="uid://lrknp4j8gni2" path="res://models/creep/troll/skeleton/n_creep_troll_skeleton_fx.gltf" id="15_h8yin"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_esel8"]
+material = ExtResource("1_kwduh")
+size = Vector3(15, 0.1, 20)
+
+[node name="camp_good_troll" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_esel8")
+
+[node name="banner_radiant_ti10_vmdl_c" parent="." instance=ExtResource("13_bbrtg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.13009, 2.13663, 6.91904)
+
+[node name="banner_radiant_ti10_vmdl_c2" parent="." instance=ExtResource("13_bbrtg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.20619, 2.72545, -7.09424)
+
+[node name="creep_camp001b_vmdl_c2" parent="." instance=ExtResource("3_kwduh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.06954, 0, -7.06898)
+
+[node name="creep_camp001c_vmdl_c" parent="." instance=ExtResource("4_h8yin")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0834, 0, -2.94595)
+
+[node name="creep_camp001c_vmdl_c3" parent="." instance=ExtResource("4_h8yin")]
+transform = Transform3D(-0.984635, 0, 0.174628, 0, 1, 0, -0.174628, 0, -0.984635, -3.17633, 0, 6.23109)
+
+[node name="creep_camp001c_vmdl_c2" parent="." instance=ExtResource("4_h8yin")]
+transform = Transform3D(0.383812, 0, -0.923411, 0, 1, 0, 0.923411, 0, 0.383812, 5.25185, 0, -4.32206)
+
+[node name="creep_camp001m_vmdl_c" parent="." instance=ExtResource("7_ud8kh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.71347, 0, 7.86515)
+
+[node name="creep_camp001l_vmdl_c" parent="." instance=ExtResource("6_vy0rt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.16415, 0.12858, 6.46213)
+
+[node name="creep_camp001h_vmdl_c2" parent="." instance=ExtResource("5_onxtw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.39993, 0, -7.11579)
+
+[node name="creep_camp001h_vmdl_c3" parent="." instance=ExtResource("5_onxtw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.99615, 0, 8.33246)
+
+[node name="camp_fire001_vmdl_c" parent="." instance=ExtResource("2_aqhak")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.88052, 0, -1.85813)
+
+[node name="tree_oak_snow_01_vmdl_c2" parent="." instance=ExtResource("12_8lq3d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.58765, 0, -8.27554)
+
+[node name="tree_oak_snow_01_vmdl_c3" parent="." instance=ExtResource("12_8lq3d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.30522, 0, 8.47232)
+
+[node name="tree_oak_02_sfm_vmdl_c" parent="." instance=ExtResource("11_o7trj")]
+transform = Transform3D(0.96652, 0, -0.256593, 0, 1, 0, 0.256593, 0, 0.96652, 5.09774, 0, -8.6345)
+
+[node name="tree_oak_00_vmdl_c2" parent="." instance=ExtResource("9_786a1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.8362, 9.53674e-07, -6.37506)
+
+[node name="dk_persona_debut_foreground_plants_vmdl_c2" parent="." instance=ExtResource("8_2eb6g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.8269, 0, 0.135149)
+
+[node name="dk_persona_debut_foreground_plants_vmdl_c3" parent="." instance=ExtResource("8_2eb6g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.74086, 0, 2.4138)
+
+[node name="dk_persona_debut_foreground_plants_vmdl_c7" parent="." instance=ExtResource("8_2eb6g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.904799, 0, 2.4138)
+
+[node name="dk_persona_debut_foreground_plants_vmdl_c8" parent="." instance=ExtResource("8_2eb6g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.62688, 0, 5.1385)
+
+[node name="dk_persona_debut_foreground_plants_vmdl_c4" parent="." instance=ExtResource("8_2eb6g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.2139, 0, -4.94972)
+
+[node name="dk_persona_debut_foreground_plants_vmdl_c5" parent="." instance=ExtResource("8_2eb6g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.13998, 0, 3.1082)
+
+[node name="dk_persona_debut_foreground_plants_vmdl_c6" parent="." instance=ExtResource("8_2eb6g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.00217, 0, -1.9031)
+
+[node name="tree_oak_00_vmdl_c3" parent="." instance=ExtResource("9_786a1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.870666, 0, -6.32381)
+
+[node name="tree_oak_01_inspector_vmdl_c" parent="." instance=ExtResource("10_xnjrj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.85305, 0, -6.59757)
+
+[node name="n_creep_troll_dark_b_vmdl_c2" parent="." instance=ExtResource("14_6q7it")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5831, 0, -4.13187)
+
+[node name="n_creep_troll_skeleton_fx_vmdl_c2" parent="." instance=ExtResource("15_h8yin")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.24225, -0.107577, -1.18881)
+
+[node name="n_creep_troll_skeleton_fx_vmdl_c3" parent="." instance=ExtResource("15_h8yin")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.46924, -0.107577, -2.46564)
+
+[node name="n_creep_troll_skeleton_fx_vmdl_c4" parent="." instance=ExtResource("15_h8yin")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.340325, -0.107577, -2.46564)

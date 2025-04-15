@@ -1,0 +1,14 @@
+[gd_resource type="StandardMaterial3D" load_steps=4 format=3 uid="uid://bcmiver5cxgqm"]
+
+[ext_resource type="Texture2D" uid="uid://cwe6h6fb3gj1v" path="res://textures/terrain/aerial_rocks_02_diff_2k.png" id="1_dalab"]
+[ext_resource type="Texture2D" uid="uid://8x7m6q03gslx" path="res://textures/terrain/aerial_rocks_02_nor_gl_2k.png" id="2_be0ma"]
+[ext_resource type="Texture2D" uid="uid://q8irmgqunvhd" path="res://textures/terrain/aerial_rocks_02_rough_2k.png" id="3_2h73l"]
+
+[resource]
+albedo_color = Color(0.147672, 0.147672, 0.147672, 1)
+albedo_texture = ExtResource("1_dalab")
+roughness_texture = ExtResource("3_2h73l")
+normal_enabled = true
+normal_scale = 3.11
+normal_texture = ExtResource("2_be0ma")
+uv1_scale = Vector3(8, 8, 8)
